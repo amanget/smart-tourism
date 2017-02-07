@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>台州府城旅游大数据平台</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js\jquery-2.1.4.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js\bootstrap.min.js"></script>		
+	</head>
+
+<body>
+	<table border="0px;" width="100%">
+		<tr>
+			<td style="font-size:25px;font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to right,rgb(46,133,188) 0,white 80%);">&nbsp;酒店基本信息</td>
+		</tr>
+	</table>	
+	<p></p>
+	<table class="table" border="1px;" width="100%" bordercolor="#CCCCCC">
+		<tr>
+			<td>
+				<div class="input-group" style="padding-right:5px;float:left">
+				  <span class="input-group-addon" id="sizing-addon1">酒店名称</span>
+				  <input type="text" class="form-control" placeholder="酒店名称" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+			<td>
+				<div class="input-group" style="padding-right:5px">
+				  <span class="input-group-addon" id="sizing-addon2">注册类型</span>
+				  <select class="form-control" aria-describedby="sizing-addon2">
+					<option>五星级／豪华型</option>
+					<option value="110">四星级／高档型</option>
+					<option value="120">三星级／舒适型</option>
+					<option value="130">二星级／经济型</option>
+					<option value="140">客栈／酒店公寓</option>
+					</select>
+				</div>				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">酒店标识</span>
+					<p style="float:left; width:9%; margin-left:1%; margin-top:5px;"><a href="#">图片预览</a></p>
+						<input type="submit" class="form-control" value="选择照片" style="float:left; width:90%">
+				</div>
+			</td>
+		<tr>
+			<td colspan="4">
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<span class="input-group-addon" id="sizing-addon2">酒店地址</span>
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>广东省</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>广州市</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>县区</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>	
+				<div class="input-group" style="padding-right:5px;width:30%;float:left">
+						<input type="text" class="form-control" placeholder="详细地址" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:25%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">邮政编码</span>
+						<input type="text" class="form-control" placeholder="邮政编码" aria-describedby="sizing-addon1" >
+				</div>
+			</td>	
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;width:33%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">酒店电话</span>
+						<input type="text" class="form-control" placeholder="酒店电话" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:34%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">酒店传真</span>
+						<input type="text" class="form-control" placeholder="酒店传真" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:33%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">酒店网址</span>
+						<input type="text" class="form-control" placeholder="酒店网址" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;width:33%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">开户名</span>
+						<input type="text" class="form-control" placeholder="开户名" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:34%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">开户行</span>
+						<input type="text" class="form-control" placeholder="开户行" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:33%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">酒店账号</span>
+						<input type="text" class="form-control" placeholder="酒店账号" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;width:25%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">开业日期</span>
+						<input type="text" class="form-control" placeholder="开业日期" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:25%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">装修日期</span>
+						<input type="text" class="form-control" placeholder="装修日期" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:25%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">客房总数</span>
+						<input type="text" class="form-control" placeholder="客房总数" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:25%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">楼高</span>
+						<input type="text" class="form-control" placeholder="楼高" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;width:100%">
+				  <span class="input-group-addon" id="sizing-addon2">是否涉外</span>
+				  <select class="form-control" aria-describedby="sizing-addon2">
+					<option>涉外酒店</option>
+					<option>非涉外酒店</option>
+				  </select>
+				</div>				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">酒店主要卖点和特色：</span>
+						<input type="text" class="form-control" placeholder="环境好" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">600</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="3">
+					<p>酒店地理位置：</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;width:33%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">位置名称</span>
+						<input type="text" class="form-control" placeholder="位置名称" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:34%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">距离</span>
+						<input type="text" class="form-control" placeholder="距离" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:33%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">路线描述</span>
+						<input type="text" class="form-control" placeholder="路线描述" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+					<p>周边环境：</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;width:33%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">名称</span>
+						<input type="text" class="form-control" placeholder="名称" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:34%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">特色</span>
+						<input type="text" class="form-control" placeholder="特色" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:33%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">距离（千米）</span>
+						<input type="text" class="form-control" placeholder="距离" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+	</table>
+		<tr>
+			<td>
+				<div class="button1" style="padding-left:40%;padding-top:30px;padding-bottom:30px;float:left">
+					<input type="submit" value="保存"  aria-describedby="sizing-addon1" >
+				</div>
+				<div class="button2" style="padding-left:30px;padding-top:30px;padding-bottom:30px;float:left">
+					<input type="submit" value="取消"  aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>

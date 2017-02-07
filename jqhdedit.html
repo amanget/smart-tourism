@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>台州府城旅游大数据平台</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js\jquery-2.1.4.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js\bootstrap.min.js"></script>		
+	</head>
+
+<body style="margin:10px;overflow-x:hidden;font-family:微软雅黑,黑体;color:rgb(46,133,188);">
+	<table border="0px;" width="100%">
+		<tr>
+			<td style="font-size:20px;font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to right,rgb(46,133,188) 0,white 80%);">&nbsp;活动信息</td>
+		</tr>
+	</table>	
+	<p></p>
+	<table class="table" border="1px;" width="100%" bordercolor="#CCCCCC">
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">景区名称</span>
+				  <input type="text" class="form-control" placeholder="景区名称" aria-describedby="sizing-addon1" >
+				</div>	
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">景区别名</span>
+				  <input type="text" class="form-control" placeholder="景区别名" aria-describedby="sizing-addon1">
+				</div>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">活动名称</span>
+				  <input type="text" class="form-control" placeholder="活动名称" aria-describedby="sizing-addon1" >
+				</div>	
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">费用（元）</span>
+				  <input type="text" class="form-control" placeholder="请填数字" aria-describedby="sizing-addon1">
+				</div>		
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="input-group" style="padding-right:5px;float:left;width:100%">
+					<div class="jznjt" style="float:left; margin-top:2px;width:16%">活动类型:</div>
+					<div style="width:14%;Float:left;padding-left:5px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;节假日
+					</div>
+					<div style="width:14%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;表演
+					</div>
+					<div style="width:14%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;比赛
+					</div>
+					<div style="width:14%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;展览会
+					</div>
+					<div style="width:14%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;主题活动
+					</div>
+					<div style="width:14%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;优惠活动
+					</div>			
+				</div>								
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;width:100%"> 
+				  <span class="input-group-addon" id="sizing-addon2">活动时间</span>
+				  <input type="text" class="form-control" placeholder="开始日期" aria-describedby="sizing-addon1" style="float:left;width:48%">
+				  <p style="float:left;padding-left:1.5%;padding-right:1.5%">~</p>
+				  <input type="text" class="form-control" placeholder="结束日期" aria-describedby="sizing-addon1" style="float:left;width:48%">
+				</div>				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;width:100%"> 
+				  <span class="input-group-addon" id="sizing-addon2">推荐时间</span>
+				  <input type="text" class="form-control" placeholder="开始时间" aria-describedby="sizing-addon1" style="float:left;width:48%">
+				  <p style="float:left;padding-left:1.5%;padding-right:1.5%">~</p>
+				  <input type="text" class="form-control" placeholder="结束时间" aria-describedby="sizing-addon1" style="float:left;width:48%">
+				</div>				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="input-group" style="padding-right:5px;float:left;width:100%">
+					<div class="jznjt" style="float:left; margin-top:2px;width:13%">预定方式:</div>
+					<div style="width:13%;Float:left;padding-left:5px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;微信
+					</div>
+					<div style="width:13%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;微博
+					</div>
+					<div style="width:13%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;APP
+					</div>
+					<div style="width:12%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;电话
+					</div>
+					<div style="width:12%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;QQ
+					</div>
+					<div style="width:12%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;传真
+					</div>
+					<div style="width:12%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;电子邮件
+					</div>					
+				</div>								
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:100%">
+				  <span class="input-group-addon" id="sizing-addon1">参与方式</span>
+				  <input type="text" class="form-control" placeholder="参与方式" aria-describedby="sizing-addon1" >
+				</div>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:100%">
+				  <span class="input-group-addon" id="sizing-addon1">优惠方式</span>
+				  <input type="text" class="form-control" placeholder="优惠方式" aria-describedby="sizing-addon1" >
+				</div>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">活动场所</span>
+				  <input type="text" class="form-control" placeholder="活动场所" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">联系方式</span>
+				  <input type="text" class="form-control" placeholder="联系方式" aria-describedby="sizing-addon1" >
+				</div>			
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">特色服务：</span>
+						<input type="text" class="form-control" placeholder="特色服务" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">600</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">内部交通：</span>
+						<input type="text" class="form-control" placeholder="内部交通" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">600</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">环境及配套设施：</span>
+						<input type="text" class="form-control" placeholder="环境及配套设施" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">600</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">活动特色：</span>
+						<input type="text" class="form-control" placeholder="活动特色" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">600</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">规则：</span>
+						<input type="text" class="form-control" placeholder="规则" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">600</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:100%;position:relative;">
+				  <span class="input-group-addon" id="sizing-addon1">活动图片：&nbsp;&nbsp;&nbsp;&nbsp;
+				  <a href="" role="button" >&nbsp;<span style=" font-weight:bolder; font-size:20px; position:absolute; z-index:100;left:165px;top:7px;">－</span>&nbsp;</a>
+				  <a href="" role="button" ><span style=" font-weight:bolder; font-size:20px;">＋</span>&nbsp;</a></span>
+				  <input type="button" class="form-control" value="上传图片" aria-describedby="sizing-addon1">
+				</div>		
+			</td>
+		</tr>
+		<tr>
+			<td  colspan="3" align="right">
+			&nbsp;&nbsp;
+				<button type="button" class="btn btn-default"onclick="history.go(-1)"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;保&nbsp;存&nbsp;</button>&nbsp;
+				<button type="button" class="btn btn-default"onclick="history.go(-1)"><span class="glyphicon glyphicon-remove-circle"></span>&nbsp;取&nbsp;消&nbsp;</button>
+			</td>
+		</tr>			
+	</table>
+</body>

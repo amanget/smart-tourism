@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>台州府城旅游大数据平台</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js\jquery-2.1.4.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js\bootstrap.min.js"></script>		
+	</head>
+
+<body style="margin:10px;overflow-x:hidden;font-family:微软雅黑,黑体;color:rgb(46,133,188);">
+	<table border="0px;" width="100%">
+		<tr>
+			<td style="font-size:20px;font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to right,rgb(46,133,188) 0,white 80%);">&nbsp;导游领队注册信息</td>
+		</tr>
+	</table>	
+	<p></p>
+	<table class="table" border="1px;" width="100%" bordercolor="#CCCCCC">
+		<tr>
+			<td>
+				<div class="input-group" style="padding-right:5px;float:left">
+				  <span class="input-group-addon" id="sizing-addon1">姓名</span>
+				  <input type="text" class="form-control" placeholder="姓名" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+			<td>	
+				<div class="input-group" style="padding-right:5px;float:left">
+				  <span class="input-group-addon" id="sizing-addon1">性别</span>
+				  <input type="text" class="form-control" placeholder="性别" aria-describedby="sizing-addon1">
+				</div>		
+			</td>
+			<td>
+				<div class="input-group" style="padding-right:5px">
+				  <span class="input-group-addon" id="sizing-addon2">年龄</span>
+				  <input type="text" class="form-control" placeholder="年龄" aria-describedby="sizing-addon1">
+				</div>				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="input-group" style="padding-right:5px;float:left">
+				  <span class="input-group-addon" id="sizing-addon1">身份证</span>
+				  <input type="text" class="form-control" placeholder="身份证号码" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+			<td>	
+				<div class="input-group" style="padding-right:5px;float:left">
+				  <span class="input-group-addon" id="sizing-addon1">生日</span>
+				  <input type="text" class="form-control" placeholder="生日" aria-describedby="sizing-addon1">
+				</div>		
+			</td>
+			<td>
+				<div class="input-group" style="padding-right:5px">
+				  <span class="input-group-addon" id="sizing-addon2">文化水平</span>
+				  <select class="form-control" aria-describedby="sizing-addon2">
+				  	<option>文化水平</option>
+					<option value="110">初中及以下</option>
+					<option value="120">高中</option>
+					<option value="130">大专</option>
+					<option value="140">本科</option>
+					</select>
+				</div>				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<span class="input-group-addon" id="sizing-addon2">家庭住址</span>
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>省份</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>地市</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>县区</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>	
+				<div class="input-group" style="padding-right:5px;width:30%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">详细地址</span>
+						<input type="text" class="form-control" placeholder="详细地址" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:25%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">邮政编码</span>
+						<input type="text" class="form-control" placeholder="邮政编码" aria-describedby="sizing-addon1" >
+				</div>
+			</td>	
+		</tr>
+
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">工作单位</span>
+						<input type="text" class="form-control" placeholder="工作单位" aria-describedby="sizing-addon1" >
+				</div>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">联系电话</span>
+						<input type="text" class="form-control" placeholder="联系电话" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">电子邮箱</span>
+						<input type="text" class="form-control" placeholder="电子邮箱" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">导游证编号</span>
+						<input type="text" class="form-control" placeholder="导游证编号" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon2">导游证类型</span>
+				  <select class="form-control" aria-describedby="sizing-addon2">
+				  	<option>导游证类型</option>
+					<option value="110">国际级</option>
+					<option value="120">国家级</option>
+					</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">导游证获证日期</span>
+						<input type="text" class="form-control" placeholder="导游证获证日期" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">导游证图片</span>
+				  <input type="button" class="form-control" value="上传图片" aria-describedby="sizing-addon1" >
+				</div>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">领队证编号</span>
+						<input type="text" class="form-control" placeholder="领队证编号" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon2">领队证类型</span>
+				  <select class="form-control" aria-describedby="sizing-addon2">
+				  	<option>领队证类型</option>
+					<option value="110">国际级</option>
+					<option value="120">国家级</option>
+					</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">领队证获证日期</span>
+						<input type="text" class="form-control" placeholder="领队证获证日期" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">领队证图片</span>
+				  <input type="button" class="form-control" value="上传图片" aria-describedby="sizing-addon1" >
+				</div>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">带团历史:</span>
+						<input type="text" class="form-control" placeholder="带团历史" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">6000</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">奖惩历史:</span>
+						<input type="text" class="form-control" placeholder="奖惩历史" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">6000</span>
+				个字
+			</td>		
+		</tr>
+	</table>
+	<table width="100%">
+		<tr>
+			<td align="right">			
+				<button type="button" class="btn btn-default"onclick="history.go(-1)"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;确&nbsp;定&nbsp;</button>&nbsp;
+				<button type="button" class="btn btn-default"onclick="history.go(-1)"><span class="glyphicon glyphicon-remove-circle"></span>&nbsp;取&nbsp;消&nbsp;</button>
+			</td>
+		</tr>			
+	</table>
+</body>

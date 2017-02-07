@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>台州府城旅游大数据平台</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js\jquery-2.1.4.min.js"></script>
+		<script src="js\Chart.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js\bootstrap.min.js"></script>		
+		
+	</head>
+	<body style="margin:10px;overflow-x:hidden;font-family:微软雅黑,黑体;color:rgb(46,133,188);">
+		<table border="0px;" width="100%">
+			<tr>
+				<td style="font-size:25px;font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to right,rgb(46,133,188) 0,white 80%);">&nbsp;旅行社统计信息</td>
+			</tr>
+		</table>	
+		<p></p>
+		<div>
+
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist" id="mytab">
+			<li role="presentation" class="active"><a href="#fwry" aria-controls="fwry" role="tab" data-toggle="tab">工作人员数量</a></li>
+			<li role="presentation"><a href="#jdxj" aria-controls="jdxj" role="tab" data-toggle="tab">旅行社数量</a></li>
+			<li role="presentation"><a href="#fwzl" aria-controls="fwzl" role="tab" data-toggle="tab">服务质量</a></li>
+			<li role="presentation"><a href="#rzrs" aria-controls="rzrs" role="tab" data-toggle="tab">揽客人数</a></li>
+			<li role="presentation"><a href="#zzl" aria-controls="zzl" role="tab" data-toggle="tab">投诉TOP10</a></li>
+
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+			  <div role="tabpanel" class="tab-pane active" id="fwry">
+				
+				<table border="0" width="100%">
+					<tr>
+						<td width="50%" align="center"><h4>按区域统计</h4><br>					
+							<canvas id="areahotel" height="250" width="250"></canvas>						
+						</td>
+					</tr>
+					<tr>
+						<td align="center" style="padding-left:5px;padding-right:5px">						
+							越秀区：250 荔湾区：230 海珠区：262 天河区：243 白云区：267 黄埔区：254 番禺区：248 花都区：279
+						</td>
+					</tr>		
+					<tr>
+						<td colspan="2" align="center" style="padding-top:5px"><h4>按时间统计</h4><br>				
+							<canvas id="areahoteltime" height="200" width="700"></canvas>
+						</td>					
+					</tr>					
+				</table>
+			  </div>
+
+			<div role="tabpanel" class="tab-pane" id="jdxj">
+				<table border="0" width="100%">
+					<tr>
+						<td width="50%" align="center">
+							<form class="form-inline">						
+								<div class="form-group">
+									<label for="exampleInputEmail3">按区域统计</label>
+									<select class="form-control" id="exampleInputEmail3">
+										<option>越秀区</option>
+										<option>花都区</option>
+										<option>荔湾区</option>
+										<option>海珠区</option>
+										<option>天河区</option>
+										<option>白云区</option>
+										<option>黄埔区</option>
+										<option>番禺区</option>
+									</select>
+								</div>
+							</form>								
+							<br>					
+							<canvas id="hotelstarbyarea" height="250" width="250"></canvas>						
+						</td>
+						<td width="50%" align="center"><h4>广州市统计</h4><br>
+							<canvas id="hotelstarbygz" height="250" width="250"></canvas>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" align="center" style="padding-left:5px;padding-right:5px">						
+							AAAAA级：3家 AAAA级：20家 AAA级：32家 AA级：43家 A级：57家
+						</td>
+						<td width="50%" align="center" style="padding-left:5px;padding-right:5px">
+							AAAAA级：50家 AAAA级：20家 AAA级：32家 AA级：43家 A级：57家
+						</td>
+					</tr>						
+				</table>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="fwzl">
+				<table border="0" width="100%">
+					<tr>
+						<td width="50%" align="center">
+							<form class="form-inline">						
+								<div class="form-group">
+									<label for="exampleInputEmail3">按区域统计</label>
+									<select class="form-control" id="exampleInputEmail3">
+										<option>越秀区</option>
+										<option>花都区</option>
+										<option>荔湾区</option>
+										<option>海珠区</option>
+										<option>天河区</option>
+										<option>白云区</option>
+										<option>黄埔区</option>
+										<option>番禺区</option>
+									</select>
+									<label for="exampleInputEmail3">投诉数量</label>
+								</div>
+							</form>								
+							<br>					
+							<canvas id="hotelfwzlbyarea" height="250" width="700"></canvas>						
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" align="center"><br><br><br>
+							<form class="form-inline">						
+								<div class="form-group">
+									<label for="exampleInputEmail3">全市投诉数量</label>
+								</div>
+							</form>								
+							<br>					
+							<canvas id="hotelfwzlbyarea2" height="250" width="700"></canvas>						
+						</td>
+					</tr>					
+				</table>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="rzrs">
+				<table border="0" width="100%">
+					<tr>
+						<td width="50%" align="center">
+							<form class="form-inline">						
+								<div class="form-group">
+									<label for="exampleInputEmail3">按区域统计</label>
+									<select class="form-control" id="exampleInputEmail3">
+										<option>越秀区</option>
+										<option>花都区</option>
+										<option>荔湾区</option>
+										<option>海珠区</option>
+										<option>天河区</option>
+										<option>白云区</option>
+										<option>黄埔区</option>
+										<option>番禺区</option>
+									</select>
+									<label for="exampleInputEmail3">客流量</label>
+								</div>
+							</form>								
+							<br>					
+							<canvas id="hotelrzrsbyarea" height="250" width="700"></canvas>						
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" align="center"><br><br><br>
+							<form class="form-inline">						
+								<div class="form-group">
+									<label for="exampleInputEmail3">全市客流量</label>
+								</div>
+							</form>								
+							<br>					
+							<canvas id="hotelrzrsbyarea2" height="250" width="700"></canvas>						
+						</td>
+					</tr>					
+				</table>			
+			</div>
+			<div role="tabpanel" class="tab-pane" id="zzl">
+				<table border="0" width="100%">
+					<tr>
+						<td width="50%" align="center">
+							<form class="form-inline">						
+								<div class="form-group">
+									<label for="exampleInputEmail3">按区域统计</label>
+									<select class="form-control" id="exampleInputEmail3">
+										<option>越秀区</option>
+										<option>花都区</option>
+										<option>荔湾区</option>
+										<option>海珠区</option>
+										<option>天河区</option>
+										<option>白云区</option>
+										<option>黄埔区</option>
+										<option>番禺区</option>
+									</select>
+									<label for="exampleInputEmail3">投诉TOP10</label>
+								</div>
+							</form>								
+							<br>					
+							<canvas id="hotelzzlbyarea3" height="250" width="700"></canvas>						
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" align="center"><br><br><br>
+							<form class="form-inline">						
+								<div class="form-group">
+									<label for="exampleInputEmail3">全市投诉TOP10</label>
+								</div>
+							</form>								
+							<br>					
+							<canvas id="hotelzzlbyarea4" height="250" width="700"></canvas>						
+						</td>
+					</tr>					
+				</table>				
+			</div>
+			<!--<div role="tabpanel" class="tab-pane" id="sr">
+				<table border="0" width="100%">
+					<tr>
+						<td width="50%" align="center">
+							<form class="form-inline">						
+								<div class="form-group">
+									<label for="exampleInputEmail3">按区域统计</label>
+									<select class="form-control" id="exampleInputEmail3">
+										<option>越秀区</option>
+										<option>花都区</option>
+										<option>荔湾区</option>
+										<option>海珠区</option>
+										<option>天河区</option>
+										<option>白云区</option>
+										<option>黄埔区</option>
+										<option>番禺区</option>
+									</select>
+									<label for="exampleInputEmail3">（万元）</label>
+								</div>
+							</form>								
+							<br>					
+							<canvas id="hotelsrbyarea" height="250" width="700"></canvas>						
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" align="center"><br><br><br>
+							<form class="form-inline">						
+								<div class="form-group">
+									<label for="exampleInputEmail3">全市收入（万元）</label>
+								</div>
+							</form>								
+							<br>					
+							<canvas id="hotelsrbyarea2" height="250" width="700"></canvas>						
+						</td>
+					</tr>					
+				</table>					
+			</div>
+			<div role="tabpanel" class="tab-pane" id="kfsl">
+				<table border="0" width="100%">
+					<tr>
+						<td width="50%" align="center"><h4>按区域统计</h4><br>					
+							<canvas id="areahotel1" height="250" width="250"></canvas>						
+						</td>
+						<td width="50%" align="center"><h4>按星级统计</h4><br>
+							<canvas id="areahotelstar1" height="250" width="250"></canvas>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" align="center" style="padding-left:5px;padding-right:5px">						
+							越秀区：250 荔湾区：230 海珠区：262 天河区：243 白云区：267 黄埔区：254 番禺区：248 花都区：279
+						</td>
+						<td width="50%" align="center" style="padding-left:5px;padding-right:5px">
+							五星级：30家 四星级：200家 三星级：362家 二星级：443家 一星级：567家
+						</td>
+					</tr>		
+					<tr>
+						<td colspan="2" align="center" style="padding-top:5px"><h4>按时间统计</h4><br>				
+							<canvas id="areahoteltime1" height="200" width="700"></canvas>
+						</td>					
+					</tr>					
+				</table>			
+			</div>-->
+		  </div>
+
+		</div>
+		<script>
+				var dataareahotel = [
+					{
+						value: 250,
+						color:"#000066",
+						highlight: "#000099",
+						label: "越秀区"
+					},
+					{
+						value: 230,
+						color: "#00CC66",
+						highlight: "#00CC33",
+						label: "荔湾区"
+					},
+					{
+						value: 262,
+						color: "#660066",
+						highlight: "#660099",
+						label: "海珠区"
+					},
+					{
+						value: 243,
+						color: "#CC0066",
+						highlight: "#CC0099",
+						label: "天河区"
+					},
+					{
+						value: 267,
+						color: "#99FF33",
+						highlight: "#99FF00",
+						label: "白云区"
+					},
+					{
+						value: 254,
+						color: "#CC33CC",
+						highlight: "#CC33FF",
+						label: "黄埔区"
+					},
+					{
+						value: 248,
+						color: "#9999CC",
+						highlight: "#9999FF",
+						label: "番禺区"
+					},
+					{
+						value: 279,
+						color: "#990033",
+						highlight: "#990000",
+						label: "花都区"
+					},
+					{
+						value: 267,
+						color: "#66CC33",
+						highlight: "#66CC00",
+						label: "南沙区"
+					}
+				]
+
+				var dataareahotelstar = [
+					{
+						value: 5,
+						color:"#000066",
+						highlight: "#000099",
+						label: "AAAAA级"
+					},
+					{
+						value: 20,
+						color: "#00CC66",
+						highlight: "#00CC33",
+						label: "AAAA级"
+					},
+					{
+						value: 32,
+						color: "#660066",
+						highlight: "#660099",
+						label: "AAA级"
+					},
+					{
+						value: 43,
+						color: "#CC0066",
+						highlight: "#CC0099",
+						label: "AA级"
+					},
+					{
+						value: 57,
+						color: "#99FF33",
+						highlight: "#99FF00",
+						label: "A级"
+					}
+				]
+				var dataareahotelstar2 = [
+					{
+						value: 8,
+						color:"#990066",
+						highlight: "#990099",
+						label: "AAAAA级"
+					},
+					{
+						value: 30,
+						color: "#11CC66",
+						highlight: "#11CC33",
+						label: "AAAA级"
+					},
+					{
+						value: 42,
+						color: "#666600",
+						highlight: "#666633",
+						label: "AAA级"
+					},
+					{
+						value: 43,
+						color: "#FF0066",
+						highlight: "#FF0099",
+						label: "AA级"
+					},
+					{
+						value: 57,
+						color: "#00FF33",
+						highlight: "#00FF00",
+						label: "A级"
+					}
+				]						
+				var dataareahoteltime = {
+					labels : ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],
+					datasets : [
+						{
+							fillColor : "rgba(220,220,220,0.5)",
+							strokeColor : "rgba(220,220,220,1)",
+							pointColor : "rgba(220,220,220,1)",
+							pointStrokeColor : "#fff",
+							data : [650,590,900,810,560,550,400,780,890,1020,1200,1340]
+						},
+						{
+							fillColor : "rgba(151,187,205,0.5)",
+							strokeColor : "rgba(151,187,205,1)",
+							pointColor : "rgba(151,187,205,1)",
+							pointStrokeColor : "#fff",
+							data : [280,480,400,190,960,270,1000,650,340,765,890,920]
+						}
+					]
+				}
+				var datatousutop10 = {
+					labels : ["广州塔","珠江","白云山","游乐园","关帝庙","长隆度假区","中山纪念堂","华南植物园","莲花山","动物园"],
+					datasets : [
+						{
+							fillColor : "rgba(151,187,205,0.5)",
+							strokeColor : "rgba(151,187,205,1)",
+							pointColor : "rgba(151,187,205,1)",						
+
+							pointStrokeColor : "#fff",
+							data : [98,59,56,47,43,32,31,30,28,18]
+						},
+						{
+							fillColor : "rgba(220,220,220,0.5)",
+							strokeColor : "rgba(220,220,220,1)",
+							pointColor : "rgba(220,220,220,1)",
+							pointStrokeColor : "#fff",
+							data : [78,69,46,48,53,22,51,20,38,18]
+						}
+					]
+				}
+				/*var dataareahoteltime2 = {
+					labels : ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],
+					datasets : [
+						{
+							fillColor : "rgba(220,220,220,0.5)",
+							strokeColor : "rgba(220,220,220,1)",
+							pointColor : "rgba(220,220,220,1)",
+							pointStrokeColor : "#fff",
+							data : [30%,50%,90%,81%,56%,55%,40%,78%,89%,54%,62%,34%]
+						},
+						{
+							fillColor : "rgba(151,187,205,0.5)",
+							strokeColor : "rgba(151,187,205,1)",
+							pointColor : "rgba(151,187,205,1)",
+							pointStrokeColor : "#fff",
+							data : [28%,48%,40%,19%,56%,27%,70%,65%,34%,76%,89%,92%]
+						}
+					]
+				}*/
+				
+			$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+				var activeTab = $(e.target).text();
+//数据结构
+
+	
+				
+
+				
+				var option = {
+					//Boolean - Whether we should show a stroke on each segment
+					segmentShowStroke : true,
+
+					//String - The colour of each segment stroke
+					segmentStrokeColor : "#fff",
+
+					//Number - The width of each segment stroke
+					segmentStrokeWidth : 2,
+
+					//Number - The percentage of the chart that we cut out of the middle
+					percentageInnerCutout : 50, // This is 0 for Pie charts
+
+					//Number - Amount of animation steps
+					animationSteps : 100,
+
+					//String - Animation easing effect
+					animationEasing : "easeOutBounce",
+
+					//Boolean - Whether we animate the rotation of the Doughnut
+					animateRotate : true,
+
+					//Boolean - Whether we animate scaling the Doughnut from the centre
+					animateScale : false,
+					
+
+					//String - A legend template
+					
+
+				}				
+	
+			  //alert($(e.target).text());
+			  //$('#myTab a[href="#jdxj"]').tab('show');
+			  //$('#myTab a:last').tab('show')
+				
+				//e.preventDefault();
+				 // $(this).tab('show');
+
+				switch(activeTab)
+				{
+				case "工作人员数量":
+					var chartareahotel = document.getElementById("areahotel").getContext("2d");
+					//var chartareahotelstar = document.getElementById("areahotelstar").getContext("2d");
+					var chartareahoteltime = document.getElementById("areahoteltime").getContext("2d");
+					
+					var myNewChart = new Chart(chartareahotel).Pie(dataareahotel);
+					//var myNewChart2 = new Chart(chartareahotelstar).Pie(dataareahotelstar);
+					var myNewChart3 = new Chart(chartareahoteltime).Line(dataareahoteltime);
+					break;
+				case "旅行社数量":
+					var charthotelstarbygz = document.getElementById("hotelstarbygz").getContext("2d");
+					var charthotelstarbyarea = document.getElementById("hotelstarbyarea").getContext("2d");
+					var myNewChart4 = new Chart(charthotelstarbygz).Pie(dataareahotelstar);
+					var myNewChart5 = new Chart(charthotelstarbyarea).Pie(dataareahotelstar2);
+					//alert("YYY");
+					break;
+				case "服务质量":
+				  //执行代码块 2
+					var charthotelfwzlbyarea = document.getElementById("hotelfwzlbyarea").getContext("2d");
+					var charthotelfwzlbyarea2 = document.getElementById("hotelfwzlbyarea2").getContext("2d");
+					var myNewChart5 = new Chart(charthotelfwzlbyarea).Line(dataareahoteltime);
+					var myNewChart6 = new Chart(charthotelfwzlbyarea2).Line(dataareahoteltime);
+					
+				  break;
+				case "揽客人数":
+					var charthotelrzrsbyarea = document.getElementById("hotelrzrsbyarea").getContext("2d");
+					var charthotelrzrsbyarea2 = document.getElementById("hotelrzrsbyarea2").getContext("2d");
+					var myNewChart7 = new Chart(charthotelrzrsbyarea).Line(dataareahoteltime);
+					var myNewChart8 = new Chart(charthotelrzrsbyarea2).Line(dataareahoteltime);				
+				  //执行代码块 2
+				  break;
+				case "投诉TOP10":
+					var charthotelzzlbyarea3 = document.getElementById("hotelzzlbyarea3").getContext("2d");
+					var charthotelzzlbyarea4 = document.getElementById("hotelzzlbyarea4").getContext("2d");
+					var myNewChart9 = new Chart(charthotelzzlbyarea3).Bar(datatousutop10);
+					var myNewChart10 = new Chart(charthotelzzlbyarea4).Bar(datatousutop10);
+								
+				  //执行代码块 2
+				  break;
+				/*case "收入":
+					var charthotelsrbyarea = document.getElementById("hotelsrbyarea").getContext("2d");
+					var charthotelsrbyarea2 = document.getElementById("hotelsrbyarea2").getContext("2d");
+					var myNewChart11 = new Chart(charthotelsrbyarea).Line(dataareahoteltime);
+					var myNewChart12 = new Chart(charthotelsrbyarea2).Line(dataareahoteltime);					
+				  //执行代码块 2
+				  break;
+				case "客房数量":
+				  //执行代码块 2
+					var chartareahotel1 = document.getElementById("areahotel1").getContext("2d");
+					var chartareahotelstar1 = document.getElementById("areahotelstar1").getContext("2d");
+					var chartareahoteltime1 = document.getElementById("areahoteltime1").getContext("2d");
+					
+					var myNewChart1 = new Chart(chartareahotel1).Pie(dataareahotel);
+					var myNewChart21 = new Chart(chartareahotelstar1).Pie(dataareahotelstar);
+					var myNewChart31 = new Chart(chartareahoteltime1).Line(dataareahoteltime);				  
+				  break;	*/			  
+				default:
+				  //n 与 case 1 和 case 2 不同时执行的代码
+				}				  
+				  
+			})
+			
+			$(document).ready(function(){  
+					var chartareahotel = document.getElementById("areahotel").getContext("2d");
+					//var chartareahotelstar = document.getElementById("areahotelstar").getContext("2d");
+					var chartareahoteltime = document.getElementById("areahoteltime").getContext("2d");
+					
+					var myNewChart = new Chart(chartareahotel).Pie(dataareahotel);
+					//var myNewChart2 = new Chart(chartareahotelstar).Pie(dataareahotelstar);
+					var myNewChart3 = new Chart(chartareahoteltime).Line(dataareahoteltime);			
+			}); 
+
+
+			
+
+
+		</script>
+	</body>
+</html>

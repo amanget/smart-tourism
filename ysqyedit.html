@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>台州府城旅游大数据平台</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js\jquery-2.1.4.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js\bootstrap.min.js"></script>		
+	</head>
+
+<body style="margin:10px;overflow-x:hidden;font-family:微软雅黑,黑体;color:rgb(46,133,188);">
+	<table border="0px;" width="100%">
+		<tr>
+			<td style="font-size:25px;font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to right,rgb(46,133,188) 0,white 80%);">&nbsp;运输企业详细信息</td>
+		</tr>
+	</table>	
+	<p></p>
+
+	<div role="tabpanel" class="tab-pane" id="zcxx">	
+<table class="table" border="1px;" width="100%" bordercolor="#CCCCCC">
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">运输企业名称</span>
+				  <input type="text" class="form-control" placeholder="运输企业名称" aria-describedby="sizing-addon1" >
+				</div>	
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">宣传名称</span>
+				  <input type="text" class="form-control" placeholder="宣传名称" aria-describedby="sizing-addon1">
+				</div>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">法人代表</span>
+				  <input type="text" class="form-control" placeholder="法人代表" aria-describedby="sizing-addon1">
+				</div>	
+				<div class="input-group" style="padding-right:5px;width:50%">
+				  <span class="input-group-addon" id="sizing-addon2">身份证或护照（法人代表）</span>
+					<input type="text" class="form-control" placeholder="身份证号码" aria-describedby="sizing-addon1" >
+				</div>				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">法人代表联系电话</span>
+						<input type="text" class="form-control" placeholder="法人代表联系电话" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<span class="input-group-addon" id="sizing-addon2">注册地址</span>
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>省份</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>地市</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>县区</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>	
+				<div class="input-group" style="padding-right:5px;width:30%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">详细地址</span>
+						<input type="text" class="form-control" placeholder="详细地址" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:25%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">邮政编码</span>
+						<input type="text" class="form-control" placeholder="邮政编码" aria-describedby="sizing-addon1" >
+				</div>
+			</td>	
+		</tr>
+		<tr>
+			<td colspan="4">
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<span class="input-group-addon" id="sizing-addon2">经营地址</span>
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>省份</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>地市</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>
+				<div class="input-group" style="padding-right:5px;width:15%;float:left">
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>县区</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>	
+				<div class="input-group" style="padding-right:5px;width:30%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">详细地址</span>
+						<input type="text" class="form-control" placeholder="详细地址" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:25%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">邮政编码</span>
+						<input type="text" class="form-control" placeholder="邮政编码" aria-describedby="sizing-addon1" >
+				</div>
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<div class="input-group" style="padding-right:5px;width:50%;float:left">
+				  <span class="input-group-addon" id="sizing-addon2">注册类型</span>
+				  <select class="form-control" aria-describedby="sizing-addon2">
+				  	<option>注册类型</option>
+					<option value="110">国有全资</option>
+					<option value="120">集体全资</option>
+					<option value="130">股份合作</option>
+					<option value="140">联营</option>
+					<option value="143">国有与集体联营</option>
+					<option value="150">有限责任（公司）</option>
+					<option value="151">国有独资（公司）</option>
+					<option value="159">其他有限责任（公司）</option>
+					<option value="160">股份有限（公司）</option>
+					<option value="170">私有</option>
+					<option value="173">私营有限责任（公司）</option>
+					<option value="174">私营股份有限（公司）</option>
+					<option value="175">个体经济</option>
+					<option value="200">港、澳、台投资</option>
+					<option value="300">国外投资</option>
+					<option value="310">中外合资</option>
+					<option value="320">中外合作</option>
+					<option value="330">外资</option>
+					<option value="900">其他</option>
+					</select>
+				</div>
+				<div class="input-group" style="padding-right:5px;width:50%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">经营许可</span>
+						<input type="text" class="form-control" placeholder="经营许可" aria-describedby="sizing-addon1" >
+				</div>				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">联系电话</span>
+						<input type="text" class="form-control" placeholder="联系电话" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">联系传真</span>
+						<input type="text" class="form-control" placeholder="联系传真" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">总经理</span>
+						<input type="text" class="form-control" placeholder="总经理" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">总经理联系方式</span>
+						<input type="text" class="form-control" placeholder="总经理联系方式" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">财务负责人</span>
+						<input type="text" class="form-control" placeholder="财务负责人" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">财务负责人联系方式</span>
+						<input type="text" class="form-control" placeholder="财务负责人联系方式" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">安全负责人</span>
+						<input type="text" class="form-control" placeholder="安全负责人" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">安全负责人联系方式</span>
+						<input type="text" class="form-control" placeholder="安全负责人联系方式" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">营业执照编码</span>
+						<input type="text" class="form-control" placeholder="请输入营业执照编号" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">营业执照图片</span>
+						<input type="submit" class="form-control" value="上传图片" >
+				</div>
+
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">国税税务登记证</span>
+						<input type="text" class="form-control" placeholder="请输入国税税务登记证编号" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">国税税务登记证图片</span>
+						<input type="submit" class="form-control" value="上传图片" >
+				</div>
+
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">地税税务登记证</span>
+						<input type="text" class="form-control" placeholder="请输入营业执照编号" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">地税税务登记证图片</span>
+						<input type="submit" class="form-control" value="上传图片" >
+				</div>
+
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="input-group" style="padding-right:5px;width:50%;float:left">
+					<span class="input-group-addon" id="sizing-addon1">纳税人识别号</span>
+						<input type="text" class="form-control" placeholder="请输入纳税人识别号" aria-describedby="sizing-addon1" >
+				</div>	
+				<div class="input-group" style="padding-right:5px;width:50%;float:left">
+				  <span class="input-group-addon" id="sizing-addon2">纳税人类型</span>
+				  <select class="form-control" aria-describedby="sizing-addon2">
+					<option>一般纳税人</option>
+					<option>小规模纳税人</option>
+					</select>
+				</div>			
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:10px;;float:left;width:33%">
+					<span class="input-group-addon" id="sizing-addon1">开户银行</span>
+						<input type="text" class="form-control" placeholder="请输入开户银行" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:34%">
+					<span class="input-group-addon" id="sizing-addon1">开户行行号</span>
+						<input type="text" class="form-control" placeholder="请输入开户行行号" aria-describedby="sizing-addon1" >
+				</div>
+				<div class="input-group" style="padding-right:10px;;float:left;width:33%">
+					<span class="input-group-addon" id="sizing-addon1">银行账户</span>
+						<input type="text" class="form-control" placeholder="请输入银行账户" aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="right">
+			
+				<button type="button" class="btn btn-default"onclick="history.go(-1)"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;保&nbsp;存&nbsp;</button>&nbsp;
+				<button type="button" class="btn btn-default"onclick="history.go(-1)"><span class="glyphicon glyphicon-remove-circle"></span>&nbsp;取&nbsp;消&nbsp;</button>
+			</td>
+		</tr>			
+	</table>	
+
+	</div>
+	
+	
+</body>

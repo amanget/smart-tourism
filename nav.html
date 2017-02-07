@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>台州府城旅游大数据平台</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js\jquery-2.1.4.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js\bootstrap.min.js"></script>		
+	</head>
+	<body style="margin:0px;overflow-x:hidden;font-family:微软雅黑,黑体;color:rgb(0,100,150);">
+
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingjq" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 80%);" data-toggle="collapse" data-parent="#accordion" href="#collapsejq" aria-expanded="true" aria-controls="collapsejq">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-globe"></span>&nbsp;景区数据</h4>
+			</div>
+			<div id="collapsejq" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingjq">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="scenicspotbasic.html" target="mainframe" class="list-group-item">景区景点基础信息</a>
+				  <a href="hbjc.html" target="mainframe" class="list-group-item">景区环保监测信息</a>				  
+				  <a href="kll.html" target="mainframe" class="list-group-item">景区游客流量信息</a>
+				  <a href="scenicspotstat.html" target="mainframe" class="list-group-item">景区统计信息</a>
+				  
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headinglxs" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 80%);" data-toggle="collapse" data-parent="#accordion" href="#collapselxs" aria-expanded="false" aria-controls="collapselxs">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-inbox"></span>&nbsp;旅行社数据</h4>
+			</div>
+			<div id="collapselxs" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinglxs">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="travelagencybasic.html" target="mainframe" class="list-group-item">旅行社基础信息</a>
+				  <a href="travelagencystat.html" target="mainframe" class="list-group-item">旅行社统计信息</a>					  
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingbg" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapsebg" aria-expanded="false" aria-controls="collapsebg">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-home"></span>&nbsp;酒店宾馆数据</h4>
+			</div>
+			<div id="collapsebg" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingbg">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="hotelbasic.html" target="mainframe" class="list-group-item">宾馆基础信息</a>
+				  <a href="youke.html" target="mainframe" class="list-group-item">入住客人基础信息</a>
+				  <a href="worker3.html" target="mainframe" class="list-group-item">宾馆服务人员信息</a>
+				  <!--<a href="#" class="list-group-item">宾馆服务质量信息</a>
+				  <a href="#" class="list-group-item">宾馆人数统计信息</a>-->
+				  <a href="hotelstat.html" target="mainframe" class="list-group-item">酒店统计信息</a>
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingdy" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapsedy" aria-expanded="false" aria-controls="collapsedy">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;导游数据</h4>
+			</div>
+			<div id="collapsedy" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingdy">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="daoyou.html" target="mainframe" class="list-group-item">导游基础信息</a>				  
+				  <a href="daoyoustat.html" target="mainframe" class="list-group-item">统计信息</a>
+			  </div>
+			</div>
+		  </div>		  
+		  
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingld" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapseld" aria-expanded="false" aria-controls="collapseld">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-flag"></span>&nbsp;领队数据</h4>
+			</div>
+			<div id="collapseld" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingld">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="lingdui.html" target="mainframe" class="list-group-item">领队基础信息</a>
+				  <a href="lingduistat.html" target="mainframe" class="list-group-item">统计信息</a>				  
+			  </div>
+			</div>
+		  </div>			  
+
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headinglyjt" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapselyjt" aria-expanded="false" aria-controls="collapselyjt">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-road"></span>&nbsp;旅游交通信息</h4>
+			</div>
+			<div id="collapselyjt" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinglyjt">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="ysqybasic.html" target="mainframe" class="list-group-item">旅游交通运输企业信息</a>
+				  <a href="bus.html" target="mainframe" class="list-group-item">旅游大巴信息</a>
+				  <a href="busstat.html" target="mainframe" class="list-group-item">统计信息</a>
+			  </div>
+			</div>
+		  </div>	
+
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingtqyb" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapsetqyb" aria-expanded="false" aria-controls="collapsetqyb">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-cloud"></span>&nbsp;天气预报信息&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="badge" style="background-color:red">new</span></h4>
+			</div>
+			<div id="collapsetqyb" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtqyb">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="tqxx.html" target="mainframe" class="list-group-item">天气与气候现象信息</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingyxlx" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapseyxlx" aria-expanded="false" aria-controls="collapseyxlx">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-book"></span>&nbsp;研学旅行信息</h4>
+			</div>
+			<div id="collapseyxlx" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingyxlx">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="schoolbasic.html" target="mainframe" class="list-group-item">学校基本信息</a>				  
+				  <a href="studengtbasic.html" target="mainframe" class="list-group-item">学生基本信息</a>				  
+				  <a href="yxlxlinebasic.html" target="mainframe" class="list-group-item">研学旅行线路信息</a>				  
+				  <a href="yxlxstat.html" target="mainframe" class="list-group-item">统计信息</a>	
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingcyqy" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapsecyqy" aria-expanded="false" aria-controls="collapsecyqy">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-cutlery"></span>&nbsp;餐饮企业信息</h4>
+			</div>
+			<div id="collapsecyqy" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingcyqy">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="cyqybasic.html" target="mainframe" class="list-group-item">餐饮企业基础信息</a>				  
+				  <a href="cyqystat.html" target="mainframe" class="list-group-item">统计信息</a>				  				  	  
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headinglysp" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapselysp" aria-expanded="false" aria-controls="collapselysp">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-gift"></span>&nbsp;旅游商品信息</h4>
+			</div>
+			<div id="collapselysp" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinglysp">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="lyspbasic.html" target="mainframe" class="list-group-item">旅游商品生产、销售企业基础信息</a>				  
+				  <a href="lyspstat.html" target="mainframe" class="list-group-item">统计信息</a>				  				  	  
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingylfw" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapseylfw" aria-expanded="false" aria-controls="collapseylfw">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-tower"></span>&nbsp;娱乐服务设施信息</h4>
+			</div>
+			<div id="collapseylfw" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingylfw">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="ylssbasic.html" target="mainframe" class="list-group-item">娱乐体育服务设施场地基础信息</a>				  
+				  <a href="jqhdbasic.html" target="mainframe" class="list-group-item">文化体育节庆活动信息</a>		
+				  <a href="ylfwstat.html" target="mainframe" class="list-group-item">统计信息</a>	
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingbjly" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapsebjly" aria-expanded="false" aria-controls="collapsebjly">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;保健旅游信息</h4>
+			</div>
+			<div id="collapsebjly" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingbjly">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="ysbjbasic.html" target="mainframe" class="list-group-item">养生保健机构基础信息</a>				  
+				  <a href="ysbjstat.html" target="mainframe" class="list-group-item">统计信息</a>				  				  	  
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingyk" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapseyk" aria-expanded="false" aria-controls="collapseyk">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-user"></span>&nbsp;游客数据</h4>
+			</div>
+			<div id="collapseyk" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingyk">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="youke.html" target="mainframe" class="list-group-item">游客基础信息</a>	
+				  <a href="youkestat.html" target="mainframe" class="list-group-item">游客统计信息</a>	
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingsjjk" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapsesjjk" aria-expanded="false" aria-controls="collapsesjjk">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-random"></span>&nbsp;数据接口管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="badge" style="background-color:red"><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></span></h4>
+			</div>
+			<div id="collapsesjjk" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsjjk">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="interfacestatus.html" target="mainframe" class="list-group-item">数据接口状态<span class="badge" style="background-color:red"><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></span></a>				  
+				  	  				  	  
+				  <a href="interfacemanage.html" target="mainframe" class="list-group-item">接口调用管理</a>	
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingxtgl" style="font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to bottom,rgb(46,133,188) 0,rgb(46,133,188) 100%);" data-toggle="collapse" data-parent="#accordion" href="#collapsextgl" aria-expanded="false" aria-controls="collapsextgl">
+			  <h4 class="panel-title"><span class="glyphicon glyphicon-cog"></span>&nbsp;系统管理</h4>
+			</div>
+			<div id="collapsextgl" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingxtgl">
+			  <div class="panel-body list-group" style="padding:0 0 0 0">
+				  <a href="usermanage.html" target="mainframe" class="list-group-item">用户管理</a>				  
+				  <a href="authority.html" target="mainframe" class="list-group-item">权限管理</a>				  				  	  
+				  <a href="log.html" target="mainframe" class="list-group-item">日志管理</a>	
+			  </div>
+			</div>
+		  </div>
+		  
+		</div>		
+
+	</body>
+</html>

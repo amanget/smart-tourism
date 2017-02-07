@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>台州府城旅游大数据平台</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js\jquery-2.1.4.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js\bootstrap.min.js"></script>		
+	</head>
+
+<body>
+	<table border="0px;" width="100%">
+		<tr>
+			<td style="font-size:25px;font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to right,rgb(46,133,188) 0,white 80%);">&nbsp;景区服务信息</td>
+		</tr>
+	</table>	
+	<p></p>
+	<table class="table" border="1px;" width="100%" bordercolor="#CCCCCC">
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">入园须知</span>
+						<input type="text" class="form-control" placeholder="入园须知" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">600</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:100%">
+					<div class="jznjt" style="float:left; margin-top:2px;width:20%">景区内交通:</div>
+					<div style="width:20%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;电瓶车
+					</div>
+					<div style="width:20%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;缆车
+					</div>
+					<div style="width:20%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;徒步
+					</div>
+					<div style="width:20%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;其他
+					</div>
+		</div>	
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">营业时间</span>
+					<input type="text" class="form-control" placeholder="开始时间" aria-describedby="sizing-addon1" style="float:left;width:45%">
+					<p style=" padding-left:20px; padding-right:20px; float:left; width:10%">~</p>
+					<input type="text" class="form-control" placeholder="结束时间" aria-describedby="sizing-addon1" style="float:left;width:45%">
+				</div>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:33%">
+				  <span class="input-group-addon" id="sizing-addon1">游玩时长</span>
+				  <input type="text" class="form-control" placeholder="游玩时长" aria-describedby="sizing-addon1">
+				</div>	
+				<div class="input-group" style="padding-right:5px;float:left;width:34%">
+				  <span class="input-group-addon" id="sizing-addon1">推荐旅游时间</span>
+				  <input type="text" class="form-control" placeholder="推荐旅游时间" aria-describedby="sizing-addon1">
+				</div>	
+				<div class="input-group" style="padding-right:5px;float:left;width:33%">
+				  <span class="input-group-addon" id="sizing-addon1">导游</span>
+				  <input type="text" class="form-control" placeholder="导游" aria-describedby="sizing-addon1">
+				</div>	
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">导游词</span>
+						<input type="text" class="form-control" placeholder="导游词" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">7000</span>
+				个字
+			</td>		
+		</tr>
+	</table>
+		<tr>
+			<td>
+				<div class="button1" style="padding-left:40%;padding-top:30px;padding-bottom:30px;float:left">
+					<input type="submit" value="保存"  aria-describedby="sizing-addon1" >
+				</div>
+				<div class="button2" style="padding-left:30px;padding-top:30px;padding-bottom:30px;float:left">
+					<input type="submit" value="取消"  aria-describedby="sizing-addon1" >
+				</div>
+			</td>
+		</tr>

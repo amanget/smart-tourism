@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>台州府城旅游大数据平台</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js\jquery-2.1.4.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js\bootstrap.min.js"></script>		
+	</head>
+	<body style="margin:10px;overflow-x:hidden;font-family:微软雅黑,黑体;color:rgb(46,133,188);">
+	<table border="0px;" width="100%">
+		<tr>
+			<td style="font-size:25px;font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to right,rgb(46,133,188) 0,white 80%);">&nbsp;领队基础信息</td>
+		</tr>
+	</table>	
+	<p></p>
+	<table border="0px;" width="100%" border="1">
+		
+		<tr>
+			<td width="1%">&nbsp;</td>
+			<td>
+				<div class="input-group" style="padding-right:5px">
+				  <span class="input-group-addon" id="sizing-addon1">姓名</span>
+				  <input type="text" class="form-control" placeholder="姓名" aria-describedby="sizing-addon1">
+				</div>			
+			</td>
+			<td>
+				<div class="input-group" style="padding-right:5px">
+				  <span class="input-group-addon" id="sizing-addon2">语种</span>
+				  <select class="form-control" aria-describedby="sizing-addon2">
+					<option>中文</option>
+					<option>外文</option>   
+				  </select>
+				</div>				
+			</td>
+			<td>
+				<div class="input-group" style="padding-right:5px">
+				  <span class="input-group-addon" id="sizing-addon2">类型</span>
+				  <select class="form-control" aria-describedby="sizing-addon2">
+					<option>国际</option>
+					<option>国内</option>    
+				  </select>
+				</div>				
+			</td>		
+			<td style="padding-right:5px"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>&nbsp;查&nbsp;询&nbsp;</button></td>
+			<td style="padding-right:5px"><a href="daoyouedit.html" target="mainframe" class="btn btn-default" role="button"><span class="glyphicon glyphicon-plus"></span>&nbsp;新&nbsp;建&nbsp;</a></td>
+		</tr>
+	</table>
+
+<p></p>
+	
+		<table class="table table-hover table-condensed" style="font-family:微软雅黑,黑体;color:rgb(46,133,188);margin-bottom: 0px;">
+			<thead>
+				<tr>					
+					<th class="text-center">序号</th>
+					<th class="text-center">姓名</th>
+					<th class="text-center">语种</th>
+					<th class="text-center">性别</th>
+					<th class="text-center">领队证号</th>
+					<th class="text-center">联系方式</th>
+					
+					<th class="text-center">类型</th>
+					<th class="text-center">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="text-center">1</td>
+					<td class="text-center">赵立超</td>
+					<td class="text-center">中文</td>
+					<td class="text-center">男</td>
+					<td class="text-center">0919730918</td>
+					<td class="text-center">020-83480900</td>
+					
+					<td class="text-center">国内</td>
+					<td class="text-center">
+						<a href="#" class="btn btn-success btn-xs" role="button">查看</a>
+						<a href="daoyouedit.html" target="mainframe" class="btn btn-info btn-xs" role="button">编辑</a>
+						<a href="#" class="btn btn-danger btn-xs" role="button">删除</a>
+					</td>
+				</tr>	
+				
+				<tr>
+					<td class="text-center">2</td>
+					<td class="text-center">张春燕</td>
+					<td class="text-center">外文（英语）</td>
+					<td class="text-center">女</td>
+					<td class="text-center">1101091973</td>
+					<td class="text-center">020-83480900</td>
+					
+					<td class="text-center">国际</td>
+					<td class="text-center">
+						<a href="#" class="btn btn-success btn-xs" role="button">查看</a>
+						<a href="daoyouedit.html" target="mainframe" class="btn btn-info btn-xs" role="button">编辑</a>
+						<a href="#" class="btn btn-danger btn-xs" role="button">删除</a>
+					</td>
+				</tr>					
+				
+				<tr>
+					<td class="text-center">3</td>
+					<td class="text-center">张力</td>
+					<td class="text-center">中文</td>
+					<td class="text-center">男</td>
+					<td class="text-center">1101082237</td>
+					<td class="text-center">13911855658</td>
+					
+					<td class="text-center">国内</td>
+					<td class="text-center">
+						<a href="#" class="btn btn-success btn-xs" role="button">查看</a>
+						<a href="daoyouedit.html" target="mainframe" class="btn btn-info btn-xs" role="button">编辑</a>
+						<a href="#" class="btn btn-danger btn-xs" role="button">删除</a>
+					</td>
+				</tr>	
+
+				<tr>
+					<td class="text-center">4</td>
+					<td class="text-center">谢伟</td>
+					<td class="text-center">外文（日语）</td>
+					<td class="text-center">男</td>
+					<td class="text-center">1109182237</td>
+					<td class="text-center">020-83480900</td>
+					
+					<td class="text-center">国际</td>
+					<td class="text-center">
+						<a href="#" class="btn btn-success btn-xs" role="button">查看</a>
+						<a href="daoyouedit.html" target="mainframe" class="btn btn-info btn-xs" role="button">编辑</a>
+						<a href="#" class="btn btn-danger btn-xs" role="button">删除</a>
+					</td>
+				</tr>	
+
+				<tr>
+					<td class="text-center">5</td>
+					<td class="text-center">刘亚鑫</td>
+					<td class="text-center">中文</td>
+					<td class="text-center">男</td>
+					<td class="text-center">1101182237</td>
+					<td class="text-center">020-83480900</td>
+					
+					<td class="text-center">国内</td>
+					<td class="text-center">
+						<a href="#" class="btn btn-success btn-xs" role="button">查看</a>
+						<a href="daoyouedit.html" target="mainframe" class="btn btn-info btn-xs" role="button">编辑</a>
+						<a href="#" class="btn btn-danger btn-xs" role="button">删除</a>
+					</td>
+				</tr>	
+
+				<tr>
+					<td class="text-center">6</td>
+					<td class="text-center">韩东霞</td>
+					<td class="text-center">中文</td>
+					<td class="text-center">女</td>
+					<td class="text-center">7309182237</td>
+					<td class="text-center">020-83480900</td>
+					
+					<td class="text-center">国内</td>
+					<td class="text-center">
+						<a href="#" class="btn btn-success btn-xs" role="button">查看</a>
+						<a href="daoyouedit.html" target="mainframe" class="btn btn-info btn-xs" role="button">编辑</a>
+						<a href="#" class="btn btn-danger btn-xs" role="button">删除</a>
+					</td>
+				</tr>	
+
+				<tr>
+					<td class="text-center">7</td>
+					<td class="text-center">于晨</td>
+					<td class="text-center">中文</td>
+					<td class="text-center">男</td>
+					<td class="text-center">1109182237</td>
+					<td class="text-center">020-83480900</td>
+					
+					<td class="text-center">国内</td>
+					<td class="text-center">
+						<a href="#" class="btn btn-success btn-xs" role="button">查看</a>
+						<a href="daoyouedit.html" target="mainframe" class="btn btn-info btn-xs" role="button">编辑</a>
+						<a href="#" class="btn btn-danger btn-xs" role="button">删除</a>
+					</td>
+				</tr>	
+
+				<tr>
+					<td class="text-center">8</td>
+					<td class="text-center">曲海波</td>
+					<td class="text-center">中文</td>
+					<td class="text-center">男</td>
+					<td class="text-center">1101092237</td>
+					<td class="text-center">020-83480900</td>
+					
+					<td class="text-center">国内</td>
+					<td class="text-center">
+						<a href="#" class="btn btn-success btn-xs" role="button">查看</a>
+						<a href="daoyouedit.html" target="mainframe" class="btn btn-info btn-xs" role="button">编辑</a>
+						<a href="#" class="btn btn-danger btn-xs" role="button">删除</a>
+					</td>
+				</tr>	
+
+				<tr>
+					<td class="text-center">9</td>
+					<td class="text-center">张庆旭</td>
+					<td class="text-center">中文</td>
+					<td class="text-center">男</td>
+					<td class="text-center">1119730917</td>
+					<td class="text-center">020-83480900</td>
+					
+					<td class="text-center">国内</td>
+					<td class="text-center">
+						<a href="#" class="btn btn-success btn-xs" role="button">查看</a>
+						<a href="daoyouedit.html" target="mainframe" class="btn btn-info btn-xs" role="button">编辑</a>
+						<a href="#" class="btn btn-danger btn-xs" role="button">删除</a>
+					</td>
+				</tr>	
+
+				<tr>
+					<td class="text-center">10</td>
+					<td class="text-center">王靖宇</td>
+					<td class="text-center">中文</td>
+					<td class="text-center">男</td>
+					<td class="text-center">110182237</td>
+					<td class="text-center">020-83480900</td>
+					
+					<td class="text-center">国内</td>
+					<td class="text-center">
+						<a href="#" class="btn btn-success btn-xs" role="button">查看</a>
+						<a href="daoyouedit.html" target="mainframe" class="btn btn-info btn-xs" role="button">编辑</a>
+						<a href="#" class="btn btn-danger btn-xs" role="button">删除</a>
+					</td>
+				</tr>					
+			</tbody>			
+		</table>
+		<div width="100%" align="right">
+			<ul class="pagination">
+				<li>
+					<a href="#">上一页</a>
+				</li>
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#">下一页</a>
+				</li>
+			</ul>
+		</div>
+
+	</body>
+</html>

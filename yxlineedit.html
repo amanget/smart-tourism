@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>台州府城旅游大数据平台</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js\jquery-2.1.4.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js\bootstrap.min.js"></script>		
+	</head>
+
+<body style="margin:10px;overflow-x:hidden;font-family:微软雅黑,黑体;color:rgb(46,133,188);">
+	<table border="0px;" width="100%">
+		<tr>
+			<td style="font-size:20px;font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to right,rgb(46,133,188) 0,white 80%);">&nbsp;研学旅行线路信息</td>
+		</tr>
+	</table>	
+	<p></p>
+	<table class="table" border="1px;" width="100%" bordercolor="#CCCCCC">
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">旅行社名称</span>
+				  <input type="text" class="form-control" placeholder="旅行社名称" aria-describedby="sizing-addon1" >
+				</div>	
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+				  <span class="input-group-addon" id="sizing-addon1">线路名称</span>
+				  <input type="text" class="form-control" placeholder="线路名称" aria-describedby="sizing-addon1">
+				</div>		
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">促销信息：</span>
+						<input type="text" class="form-control" placeholder="促销信息" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">600</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="4">
+				<div class="input-group" style="padding-right:5px;width:50%;float:left">
+					<span class="input-group-addon" id="sizing-addon2">出发地</span>
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>省份</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>
+				<div class="input-group" style="padding-right:5px;width:50%;float:left">
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>地市</option>
+						<option>北京市</option>
+						<option>天津市</option>
+						<option>上海市</option>
+						<option>河北省</option>
+						<option>山西省</option>
+						<option>湖南省</option>
+						<option>湖北省</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">特色服务：</span>
+						<input type="text" class="form-control" placeholder="特色服务" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">600</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">标签</span>
+						<input type="submit" class="form-control" value="标签" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:50%;float:left">
+					<span class="input-group-addon" id="sizing-addon2">支付类型</span>
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>支付类型</option>
+						<option>在线支付</option>
+						<option>景区到付</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;height:120px;width:100%">
+					<span class="input-group-addon" id="sizing-addon1">起价说明：</span>
+						<input type="text" class="form-control" placeholder="起价说明" aria-describedby="sizing-addon1" input style="height:120px;">
+				</div>
+				<br>
+				剩余
+				<span id="businessLicensInfo" style="color: red;">600</span>
+				个字
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">时间描述</span>
+						<input type="submit" class="form-control" value="时间描述" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:50%;float:left">
+					<span class="input-group-addon" id="sizing-addon2">线路类型</span>
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>线路类型</option>
+						<option>亲子游</option>
+						<option>景观游</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:100%">
+				  <span class="input-group-addon" id="sizing-addon1">合同范本</span>
+				  <input type="button" class="form-control" value="选择文件" aria-describedby="sizing-addon1" >
+				</div>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:100%">
+				  <span class="input-group-addon" id="sizing-addon1">线路图片：&nbsp;&nbsp;&nbsp;&nbsp;
+				  <a href="#" role="button" >&nbsp;<span style=" font-weight:bolder; font-size:20px;">＋</span>(增加线路图片)&nbsp;</a></span>
+				  <input type="button" class="form-control" value="上传图片" aria-describedby="sizing-addon1" >
+				</div>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:50%">
+					<span class="input-group-addon" id="sizing-addon1">线路天数</span>
+						<input type="submit" class="form-control" value="线路天数" >
+				</div>
+				<div class="input-group" style="padding-right:5px;width:50%;float:left">
+					<span class="input-group-addon" id="sizing-addon2">价格类型</span>
+					<select class="form-control" aria-describedby="sizing-addon2">
+						<option>价格类型</option>
+						<option>跟团价</option>
+						<option>自驾游</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;float:left;width:33%">
+				  <span class="input-group-addon" id="sizing-addon1">门市价</span>
+				  <input type="text" class="form-control" placeholder="门市价" aria-describedby="sizing-addon1" >
+				</div>	
+				<div class="input-group" style="padding-right:5px;float:left;width:34%">
+				  <span class="input-group-addon" id="sizing-addon1">系统价</span>
+				  <input type="text" class="form-control" placeholder="系统价" aria-describedby="sizing-addon1">
+				</div>
+				<div class="input-group" style="padding-right:5px;float:left;width:33%">
+				  <span class="input-group-addon" id="sizing-addon1">儿童价</span>
+				  <input type="text" class="form-control" placeholder="电子邮箱" aria-describedby="sizing-addon1">
+				</div>				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="input-group" style="padding-right:5px;width:100%"> 
+				  <span class="input-group-addon" id="sizing-addon2">线路有效期</span>
+				  <input type="text" class="form-control" placeholder="开始日期" aria-describedby="sizing-addon1" style="float:left;width:48%">
+				  <p style="float:left;padding-left:1.5%;padding-right:1.5%">~</p>
+				  <input type="text" class="form-control" placeholder="结束日期" aria-describedby="sizing-addon1" style="float:left;width:48%">
+				</div>				
+			</td>
+		<tr>
+			<td>
+				<div class="input-group" style="padding-right:5px;float:left;width:100%">
+					<div class="jznjt" style="float:left; margin-top:2px;width:12%">发团间隔:</div>
+					<div style="width:11%;Float:left;padding-left:5px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;全部
+					</div>
+					<div style="width:11%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;星期一
+					</div>
+					<div style="width:11%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;星期二
+					</div>
+					<div style="width:11%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;星期三
+					</div>
+					<div style="width:11%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;星期四
+					</div>
+					<div style="width:11%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;星期五
+					</div>
+					<div style="width:11%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;星期六
+					</div>
+					<div style="width:11%;Float:left;padding-left:10px;margin-top:2px">
+						<input type="checkbox" >&nbsp;&nbsp;星期日
+					</div>					
+				</div>								
+			</td>
+		</tr>
+	</table>
+		<table>
+		<tr>
+			<td align="right">
+			&nbsp;&nbsp;
+				<button type="button" class="btn btn-default"onclick="history.go(-1)"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;保&nbsp;存&nbsp;</button>&nbsp;
+				<button type="button" class="btn btn-default"onclick="history.go(-1)"><span class="glyphicon glyphicon-remove-circle"></span>&nbsp;取&nbsp;消&nbsp;</button>
+			</td>
+		</tr>	
+		</table>
+	</body>

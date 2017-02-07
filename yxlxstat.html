@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>台州府城旅游大数据平台</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="js\jquery-2.1.4.min.js"></script>
+		<script src="js\Chart.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js\bootstrap.min.js"></script>		
+		
+	</head>
+	<body style="margin:10px;overflow-x:hidden;font-family:微软雅黑,黑体;color:rgb(46,133,188);">
+		<table border="0px;" width="100%">
+			<tr>
+				<td style="font-size:25px;font-family:微软雅黑,黑体;color:white;background-image: linear-gradient(to right,rgb(46,133,188) 0,white 80%);">&nbsp;研学旅行统计信息</td>
+			</tr>
+		</table>	
+		<p></p>
+
+
+		  <!-- Tab panes -->
+
+			  
+				<!--服务人员数量-->
+				<table border="0" width="100%">
+					<tr>
+						<td width="50%" align="center"><h4>学校数量统计</h4><br>					
+							<canvas id="areahotel" height="250" width="250"></canvas>						
+						</td>
+						<td width="50%" align="center"><h4>旅行研学人数统计</h4><br>
+							<canvas id="areahotelstar" height="250" width="250"></canvas>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" align="center" style="padding-left:5px;padding-right:5px">						
+							大学：25所 中学：230所 小学：468所
+						</td>
+						<td width="50%" align="center" style="padding-left:5px;padding-right:5px">
+							大学：2459人 中学：23876人 小学：1862人
+						</td>
+					</tr>		
+					<tr>
+						<td colspan="2" align="center" style="padding-top:5px"><h4>按时间统计</h4><br>				
+							<canvas id="areahoteltime" height="200" width="700"></canvas>
+						</td>					
+					</tr>					
+				</table>
+			 
+		<script>
+				var dataareahotel = [
+					{
+						value: 25,
+						color: "#CC0066",
+						highlight: "#CC0099",
+						label: "大学"
+					},
+					{
+						value: 230,
+						color: "#99FF33",
+						highlight: "#99FF00",
+						label: "中学"
+					},
+					{
+						value: 468,
+						color: "#CC33CC",
+						highlight: "#CC33FF",
+						label: "小学"
+					}
+				]
+
+				var dataareahotelstar = [
+					{
+						value: 2459,
+						color:"#000066",
+						highlight: "#000099",
+						label: "大学"
+					},
+					{
+						value: 23876,
+						color: "#00CC66",
+						highlight: "#00CC33",
+						label: "中学"
+					},
+					{
+						value: 1862,
+						color: "#660066",
+						highlight: "#660099",
+						label: "小学"
+					}
+				]
+				var dataareahotelstar2 = [
+					{
+						value: 80,
+						color:"#990066",
+						highlight: "#990099",
+						label: "五星级"
+					},
+					{
+						value: 320,
+						color: "#11CC66",
+						highlight: "#11CC33",
+						label: "四星级"
+					},
+					{
+						value: 462,
+						color: "#666600",
+						highlight: "#666633",
+						label: "三星级"
+					},
+					{
+						value: 443,
+						color: "#FF0066",
+						highlight: "#FF0099",
+						label: "二星级"
+					},
+					{
+						value: 567,
+						color: "#00FF33",
+						highlight: "#00FF00",
+						label: "一星级"
+					}
+				]						
+				var dataareahoteltime = {
+					labels : ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],
+					datasets : [
+						{
+							fillColor : "rgba(220,220,220,0.5)",
+							strokeColor : "rgba(220,220,220,1)",
+							pointColor : "rgba(220,220,220,1)",
+							pointStrokeColor : "#fff",
+							data : [650,590,900,810,560,550,400,780,890,1020,1200,1340]
+						},
+						{
+							fillColor : "rgba(151,187,205,0.5)",
+							strokeColor : "rgba(151,187,205,1)",
+							pointColor : "rgba(151,187,205,1)",
+							pointStrokeColor : "#fff",
+							data : [280,480,400,190,960,270,1000,650,340,765,890,920]
+						}
+					]
+				}
+
+				/*var dataareahoteltime2 = {
+					labels : ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],
+					datasets : [
+						{
+							fillColor : "rgba(220,220,220,0.5)",
+							strokeColor : "rgba(220,220,220,1)",
+							pointColor : "rgba(220,220,220,1)",
+							pointStrokeColor : "#fff",
+							data : [30%,50%,90%,81%,56%,55%,40%,78%,89%,54%,62%,34%]
+						},
+						{
+							fillColor : "rgba(151,187,205,0.5)",
+							strokeColor : "rgba(151,187,205,1)",
+							pointColor : "rgba(151,187,205,1)",
+							pointStrokeColor : "#fff",
+							data : [28%,48%,40%,19%,56%,27%,70%,65%,34%,76%,89%,92%]
+						}
+					]
+				}*/
+				
+			
+			$(document).ready(function(){  
+					var chartareahotel = document.getElementById("areahotel").getContext("2d");
+					var chartareahotelstar = document.getElementById("areahotelstar").getContext("2d");
+					var chartareahoteltime = document.getElementById("areahoteltime").getContext("2d");
+					
+					var myNewChart = new Chart(chartareahotel).Pie(dataareahotel);
+					var myNewChart2 = new Chart(chartareahotelstar).Pie(dataareahotelstar);
+					var myNewChart3 = new Chart(chartareahoteltime).Line(dataareahoteltime);			
+			}); 
+
+
+			
+
+
+		</script>
+	</body>
+</html>
