@@ -58,7 +58,7 @@
 				<td colspan="2">
 					<div class="input-group">
 						<span class="input-group-addon form-horizontal" id="sizing-addon1">注册地址</span>
-					  	<input type="text" class="form-control" placeholder="注册地址，具体到门牌号。如：广州市东山区寺右一马路2号" aria-describedby="sizing-addon1">					  						
+					  	<input type="text" class="form-control" placeholder="注册地址，具体到门牌号。如：临海东山区寺右一马路2号" aria-describedby="sizing-addon1">					  						
 					</div>						
 				</td>
 				<td>
